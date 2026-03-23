@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Disallow Sheila Kiago's profile from search engines
+Disallow: /team/sheila-kiago
+
+# Allow search engines to crawl the important pages
+Allow: /
+Allow: /team
+Allow: /team/prince-gichaga
+Allow: /services
+Allow: /practice-areas
+Allow: /about
+Allow: /client-portal
+Allow: /contact
+
+Sitemap: https://kingslawadvocates.com/sitemap.xml
