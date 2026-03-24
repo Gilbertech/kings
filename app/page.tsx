@@ -39,7 +39,7 @@ const FloatingBubble = ({ delay, size, position }: { delay: number; size: string
   />
 )
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Navigation />
