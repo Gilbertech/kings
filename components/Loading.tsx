@@ -17,7 +17,7 @@ export default function Loading() {
   if (!isVisible) return null
 
   return (
-    <div className="fixed inset-0 z-50 bg-gradient-to-br from-primary via-primary to-primary/90 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center">
       {/* Animated background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse"></div>
@@ -30,7 +30,7 @@ export default function Loading() {
         <div className="relative w-48 h-24 flex items-center justify-center">
           <div className="absolute inset-0 bg-white/10 rounded-2xl blur-xl animate-pulse"></div>
           <Image
-            src="/images/kings-law-logo-white.png"
+            src="https://kingslawadvocates.com/Kings-Law-Logo.png"
             alt="Kings Law Advocates"
             width={200}
             height={80}
