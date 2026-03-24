@@ -59,7 +59,7 @@ export default function Services() {
             </div>
 
             {/* Dispute Resolution */}
-            <div className="bg-background p-8 rounded-lg border-2 border-secondary/30 hover:shadow-lg transition-shadow">
+            <div className="bg-background p-8 rounded-lg border-2 border-primary/30 hover:shadow-lg transition-shadow">
               <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Dispute Resolution</h3>
               <p className="text-muted-foreground mb-6">
                 Expert litigation and dispute resolution strategies with experience up to the highest courts.
@@ -117,7 +117,7 @@ export default function Services() {
             </div>
 
             {/* Real Estate */}
-            <div className="bg-background p-8 rounded-lg border-2 border-secondary/30 hover:shadow-lg transition-shadow">
+            <div className="bg-background p-8 rounded-lg border-2 border-primary/30 hover:shadow-lg transition-shadow">
               <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Real Estate</h3>
               <p className="text-muted-foreground mb-6">
                 Efficient deal execution, thorough due diligence, and speedy conveyancing transactions.

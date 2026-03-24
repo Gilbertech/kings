@@ -68,10 +68,10 @@ export default function Contact() {
                   href="https://maps.google.com/?q=Manga+House+Nairobi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex gap-6 p-6 bg-background rounded-lg border-2 border-secondary/30 hover:border-secondary hover:shadow-lg transition-all group"
+                  className="flex gap-6 p-6 bg-background rounded-lg border-2 border-primary/30 hover:border-primary hover:shadow-lg transition-all group"
                 >
-                  <div className="w-16 h-16 bg-secondary/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-secondary/30 transition-colors">
-                    <MapPin size={32} className="text-secondary" />
+                  <div className="w-16 h-16 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-primary/30 transition-colors">
+                    <MapPin size={32} className="text-primary" />
                   </div>
                   <div>
                     <h3 className="font-serif font-bold text-lg text-foreground mb-1">Office Location</h3>
@@ -115,7 +115,7 @@ export default function Contact() {
 
             {/* Quick Info */}
             <div className="space-y-8">
-              <div className="bg-background p-8 rounded-lg border-2 border-secondary/30">
+              <div className="bg-background p-8 rounded-lg border-2 border-primary/30">
                 <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Company Information</h3>
                 <div className="space-y-3 text-muted-foreground">
                   <p>
@@ -133,7 +133,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="bg-primary/10 border-2 border-secondary/30 p-8 rounded-lg">
+              <div className="bg-primary/10 border-2 border-primary/30 p-8 rounded-lg">
                 <h3 className="font-serif font-bold text-lg text-foreground mb-3">Multiple Contact Options</h3>
                 <ul className="space-y-2 text-muted-foreground text-sm">
                   <li className="flex gap-2">

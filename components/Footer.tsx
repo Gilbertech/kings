@@ -13,13 +13,15 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <Link href="/" className="block mb-4 group hover-lift">
-              <div className="relative w-40 h-12 flex-shrink-0 bg-white/5 rounded-lg p-2">
+              <div className="relative w-40 h-12 flex-shrink-0">
                 <Image
-                  src="/images/kings-law-logo-white.png"
+                  src="https://kingslawadvocates.com/Kings-Law-Logo.png"
                   alt="Kings Law Advocates Logo"
-                  fill
+                  width={160}
+                  height={48}
                   className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                   priority
+                  unoptimized
                 />
               </div>
             </Link>

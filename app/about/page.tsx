@@ -82,9 +82,9 @@ export default function About() {
                 Our team has worked at leading law firms including DLA Piper Africa Kenya, gaining extensive experience in complex legal matters, high-stakes transactions, and professional practice standards. This foundation ensures we deliver world-class legal services.
               </p>
             </div>
-            <div className="bg-card p-8 rounded-lg border border-border hover:border-secondary/50 transition-colors">
-              <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                <Briefcase className="text-secondary" size={24} />
+            <div className="bg-card p-8 rounded-lg border border-border hover:border-primary/50 transition-colors">
+              <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                <Briefcase className="text-primary" size={24} />
               </div>
               <h3 className="font-serif font-bold text-lg mb-3 text-foreground">Corporate Experience</h3>
               <p className="text-muted-foreground">

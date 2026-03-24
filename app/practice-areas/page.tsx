@@ -62,8 +62,8 @@ export default function PracticeAreas() {
             {/* Dispute Resolution */}
             <div id="dispute-resolution" className="grid md:grid-cols-2 gap-12 items-start">
               <div className="order-2">
-                <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                  <Scale className="text-secondary" size={24} />
+                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                  <Scale className="text-primary" size={24} />
                 </div>
                 <h2 className="font-serif text-3xl font-bold text-foreground mb-4">Dispute Resolution</h2>
                 <p className="text-muted-foreground mb-6">
@@ -73,7 +73,7 @@ export default function PracticeAreas() {
                   We don't promise wins but guarantee success where the best case is laid out for adjudication.
                 </p>
               </div>
-              <div className="order-1 md:order-2 bg-background p-8 rounded-lg border-2 border-secondary/30 space-y-3">
+              <div className="order-1 md:order-2 bg-background p-8 rounded-lg border-2 border-primary/30 space-y-3">
                 {[
                   'Commercial & corporate litigation',
                   'Civil dispute resolution',
@@ -83,7 +83,7 @@ export default function PracticeAreas() {
                   'Chamber pleadings expertise',
                 ].map((item, index) => (
                   <div key={index} className="flex gap-3 items-start">
-                    <CheckCircle size={20} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <CheckCircle size={20} className="text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-foreground">{item}</span>
                   </div>
                 ))}
@@ -93,8 +93,8 @@ export default function PracticeAreas() {
             {/* Banking & Finance */}
             <div id="banking-finance" className="grid md:grid-cols-2 gap-12 items-start">
               <div>
-                <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                  <Building2 className="text-secondary" size={24} />
+                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                  <Building2 className="text-primary" size={24} />
                 </div>
                 <h2 className="font-serif text-3xl font-bold text-foreground mb-4">Banking & Finance</h2>
                 <p className="text-muted-foreground mb-6">
@@ -104,17 +104,17 @@ export default function PracticeAreas() {
                   We incorporate pragmatism and dealership in providing legal solutions that enable our clients to succeed in their deals.
                 </p>
               </div>
-              <div className="bg-background p-8 rounded-lg border-2 border-secondary/30 space-y-3">
+              <div className="bg-background p-8 rounded-lg border-2 border-primary/30 space-y-3">
                 {[
                   'Banking transactions',
                   'Finance law advisory',
-                  'Regulatory compliance',
-                  'IFRS expertise',
-                  'Financial reporting standards',
-                  'High-level banking litigation',
+                  'IFRS compliance',
+                  'Regulatory matters',
+                  'Risk management',
+                  'Client-focused approach',
                 ].map((item, index) => (
                   <div key={index} className="flex gap-3 items-start">
-                    <CheckCircle size={20} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <CheckCircle size={20} className="text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-foreground">{item}</span>
                   </div>
                 ))}
@@ -124,8 +124,8 @@ export default function PracticeAreas() {
             {/* Real Estate */}
             <div id="real-estate" className="grid md:grid-cols-2 gap-12 items-start">
               <div className="order-2">
-                <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                  <Home className="text-secondary" size={24} />
+                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                  <Home className="text-primary" size={24} />
                 </div>
                 <h2 className="font-serif text-3xl font-bold text-foreground mb-4">Real Estate</h2>
                 <p className="text-muted-foreground mb-6">
@@ -135,7 +135,7 @@ export default function PracticeAreas() {
                   We act as custodians of original title documents with professional indemnity cover up to Kenya Shillings 50 million.
                 </p>
               </div>
-              <div className="order-1 md:order-2 bg-background p-8 rounded-lg border-2 border-secondary/30 space-y-3">
+              <div className="order-1 md:order-2 bg-background p-8 rounded-lg border-2 border-primary/30 space-y-3">
                 {[
                   'Property transactions',
                   'Conveyancing services',
@@ -145,7 +145,7 @@ export default function PracticeAreas() {
                   'Document custodian services',
                 ].map((item, index) => (
                   <div key={index} className="flex gap-3 items-start">
-                    <CheckCircle size={20} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <CheckCircle size={20} className="text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-foreground">{item}</span>
                   </div>
                 ))}
