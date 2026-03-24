@@ -1,12 +1,19 @@
 import type { Metadata, Viewport } from 'next'
-import { Cinzel } from 'next/font/google'
+import { Cinzel, Raleway } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import Loading from '@/components/Loading'
 import './globals.css'
 
 const cinzel = Cinzel({
   variable: '--font-serif',
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800', '900'],
+})
+
+const raleway = Raleway({
+  variable: '--font-sans',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
 })
 
 export const viewport: Viewport = {
@@ -41,8 +48,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={cinzel.variable}>
+    <html lang="en" className={`${cinzel.variable} ${raleway.variable}`}>
       <body className="font-sans antialiased bg-background text-foreground">
+        <Loading />
         {children}
         <Analytics />
       </body>

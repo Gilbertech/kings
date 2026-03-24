@@ -17,9 +17,11 @@ export default function Footer() {
                 <Image
                   src="https://kingslawadvocates.com/Kings-Law-Logo.png"
                   alt="Kings Law Advocates Logo"
-                  fill
+                  width={160}
+                  height={48}
                   className="object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                   priority
+                  unoptimized
                 />
               </div>
             </Link>

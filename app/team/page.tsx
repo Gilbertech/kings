@@ -1,6 +1,8 @@
 import Navigation from '@/components/Navigation'
+import HeroSection from '@/components/HeroSection'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -14,14 +16,12 @@ export default function Team() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-serif text-5xl md:text-5xl font-bold mb-4 text-balance">Our Experienced Team</h1>
-          <p className="text-xl text-primary-foreground/90 max-w-2xl">
-            Highly qualified legal professionals dedicated to delivering exceptional results
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        title="Our Experienced Team"
+        subtitle="Highly qualified legal professionals dedicated to delivering exceptional results"
+        imageSrc="/images/legal-team.jpg"
+        imageAlt="Our Team"
+      />
 
       {/* Team Members */}
       <section className="py-20 bg-card">
@@ -31,11 +31,15 @@ export default function Team() {
             <div className="bg-background rounded-lg overflow-hidden shadow-lg border border-border hover:shadow-xl transition-shadow">
               <div className="grid md:grid-cols-3 gap-8 p-8">
                 <div className="flex items-center justify-center">
-                  <div className="w-full aspect-square bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center border-4 border-secondary/30">
-                    <div className="text-center text-primary-foreground">
-                      <div className="font-serif text-6xl font-bold mb-2">PK</div>
-                      <p className="text-sm">Managing Partner</p>
-                    </div>
+                  <div className="w-full aspect-square rounded-lg overflow-hidden border-4 border-secondary/30 shadow-lg">
+                    <Image
+                      src="/images/prince-gichaga.jpg"
+                      alt="Prince Gichaga King'ori"
+                      width={400}
+                      height={400}
+                      className="object-cover w-full h-full"
+                      priority
+                    />
                   </div>
                 </div>
                 <div className="md:col-span-2 space-y-4">
@@ -85,32 +89,46 @@ export default function Team() {
             <div className="bg-background rounded-lg overflow-hidden shadow-lg border border-border opacity-90">
               <div className="grid md:grid-cols-3 gap-8 p-8">
                 <div className="flex items-center justify-center">
-                  <div className="w-full aspect-square bg-gradient-to-br from-primary/70 to-primary/60 rounded-lg flex items-center justify-center border-4 border-secondary/20">
-                    <div className="text-center text-primary-foreground">
-                      <div className="font-serif text-6xl font-bold mb-2">SK</div>
-                      <p className="text-sm">Legal Counsel</p>
-                    </div>
+                  <div className="w-full aspect-square rounded-lg overflow-hidden border-4 border-secondary/30 shadow-lg">
+                    <Image
+                      src="/images/sheila-attorney.jpg"
+                      alt="Sheila Kiago"
+                      width={400}
+                      height={400}
+                      className="object-cover w-full h-full"
+                    />
                   </div>
                 </div>
                 <div className="md:col-span-2 space-y-4">
                   <div>
-                    <h3 className="font-serif text-2xl font-bold text-foreground/70 mb-1">Sheila Kiago</h3>
-                    <p className="text-muted-foreground text-base">Legal Counsel</p>
+                    <h3 className="font-serif text-2xl font-bold text-foreground mb-1">Sheila Kiago</h3>
+                    <p className="text-secondary font-semibold text-base">Legal Counsel</p>
                   </div>
                   
                   <div className="space-y-3 text-muted-foreground text-sm">
                     <div>
+                      <p className="font-semibold text-foreground mb-1">Education</p>
                       <p>Bachelor of Laws (Second Class Upper Division) from Kenyatta University</p>
-                      <p>Advocate of the High Court of Kenya with 3+ years experience</p>
-                      <p>Certified Mediator (CPM)</p>
                     </div>
 
                     <div>
-                      <p>Extensive background in banking and finance with IFRS training</p>
-                      <p>Previous experience as Legal Counsel at Equity Bank Kenya Limited and National Bank of Kenya Limited</p>
+                      <p className="font-semibold text-foreground mb-1">Professional Qualifications</p>
+                      <p>Advocate of the High Court of Kenya with 3+ years post-admission experience</p>
+                      <p>Certified Mediator (CPM) - Alternative Dispute Resolution specialist</p>
+                      <p>IFRS Training and Banking Regulations certification</p>
                     </div>
 
-                    <p className="text-xs text-muted-foreground/70 italic">Currently developing expertise through corporate experience</p>
+                    <div>
+                      <p className="font-semibold text-foreground mb-1">Professional Experience</p>
+                      <p>Legal Counsel at Equity Bank Kenya Limited - Banking law and compliance</p>
+                      <p>Legal Counsel at National Bank of Kenya Limited - Financial regulations and risk management</p>
+                      <p>Extensive background in banking, finance, and regulatory compliance matters</p>
+                    </div>
+
+                    <div>
+                      <p className="font-semibold text-foreground mb-1">Practice Focus</p>
+                      <p>Banking and Financial Services Law, Corporate Compliance, Alternative Dispute Resolution, Mediation</p>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -1,8 +1,9 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import HeroSection from '@/components/HeroSection'
 import Link from 'next/link'
 import { Metadata } from 'next'
-import { Award, BookOpen, MapPin, Phone, Mail } from 'lucide-react'
+import { Award, BookOpen, MapPin, Phone, Mail, Star, Target, Users, Briefcase } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Prince Gichaga King\'ori | Managing Partner | Kings Law Advocates',
@@ -21,39 +22,32 @@ export default function PrinceProfile() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
+      <HeroSection
+        title="Prince Gichaga King'ori"
+        subtitle="Managing Partner - Commercial Law & Dispute Resolution Expert"
+        imageSrc="/images/hero-prince-gichaga.jpg"
+        imageAlt="Prince Gichaga King'ori, Managing Partner"
+      />
+
+      {/* Quick Stats */}
+      <section className="bg-primary text-primary-foreground py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="flex items-center justify-center">
-              <div className="w-64 aspect-square bg-primary-foreground/10 rounded-lg flex items-center justify-center border-4 border-secondary/40">
-                <div className="text-center">
-                  <div className="font-serif text-8xl font-bold mb-2 text-secondary">PK</div>
-                  <p className="text-lg text-primary-foreground/80">Managing Partner</p>
-                </div>
-              </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-secondary mb-1">3+</div>
+              <p className="text-sm md:text-base text-primary-foreground/80">Years Post-Admission</p>
             </div>
-            <div className="md:col-span-2">
-              <h1 className="font-serif text-5xl font-bold mb-2 text-balance">Prince Gichaga King&apos;ori</h1>
-              <p className="text-2xl text-secondary font-semibold mb-6">Managing Partner, Kings Law Advocates LLP</p>
-              <p className="text-lg text-primary-foreground/90 mb-8">
-                Expert in commercial law, dispute resolution, and international economic law. Leading advocate specializing in complex transactions and strategic legal solutions.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="tel:+254715326849"
-                  className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-primary px-6 py-3 rounded-lg font-semibold transition-colors"
-                >
-                  <Phone size={20} />
-                  Call Now
-                </a>
-                <a
-                  href="mailto:info@kingslawadvocates.com"
-                  className="inline-flex items-center gap-2 bg-primary-foreground/20 hover:bg-primary-foreground/30 text-primary-foreground px-6 py-3 rounded-lg font-semibold border border-primary-foreground/50 transition-colors"
-                >
-                  <Mail size={20} />
-                  Email
-                </a>
-              </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-secondary mb-1">100+</div>
+              <p className="text-sm md:text-base text-primary-foreground/80">Cases Successfully Handled</p>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-secondary mb-1">15+</div>
+              <p className="text-sm md:text-base text-primary-foreground/80">Practice Areas</p>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-secondary mb-1">50+</div>
+              <p className="text-sm md:text-base text-primary-foreground/80">Happy Clients</p>
             </div>
           </div>
         </div>
@@ -111,29 +105,32 @@ export default function PrinceProfile() {
 
               {/* Experience */}
               <div>
-                <h2 className="font-serif text-3xl font-bold text-foreground mb-6">Professional Experience</h2>
+                <div className="flex items-center gap-3 mb-6">
+                  <Briefcase size={28} className="text-secondary" />
+                  <h2 className="font-serif text-3xl font-bold text-foreground">Professional Experience</h2>
+                </div>
                 <div className="space-y-6">
-                  <div className="bg-background p-6 rounded-lg border border-border">
-                    <h3 className="font-serif font-bold text-lg text-foreground mb-2">Head of Legal, Compliance & Human Resources</h3>
-                    <p className="text-secondary font-semibold mb-2">Vermi-Farm Initiative</p>
-                    <p className="text-muted-foreground text-sm">
-                      Leading legal strategy for a social entrepreneurship startup in the agriculture and climate change sectors. Overseeing legal compliance, corporate governance, and HR matters.
+                  <div className="bg-background p-6 rounded-lg border border-border hover:border-secondary/50 transition-colors">
+                    <h3 className="font-serif font-bold text-lg text-foreground mb-1">Head of Legal, Compliance & Human Resources</h3>
+                    <p className="text-secondary font-semibold mb-3">Vermi-Farm Initiative</p>
+                    <p className="text-muted-foreground">
+                      Leading comprehensive legal strategy for an innovative social entrepreneurship startup operating at the intersection of agriculture, climate change, and sustainable development. Responsibilities include overseeing all legal compliance matters, ensuring robust corporate governance frameworks, managing human resource policies, and providing strategic legal counsel for organizational growth. Collaborating with international partners on cross-border transactions and climate resilience initiatives.
                     </p>
                   </div>
 
-                  <div className="bg-background p-6 rounded-lg border border-border">
-                    <h3 className="font-serif font-bold text-lg text-foreground mb-2">Senior Associate - Dispute Resolution</h3>
-                    <p className="text-secondary font-semibold mb-2">Wahome & Akedi Advocates</p>
-                    <p className="text-muted-foreground text-sm">
-                      Represented clients in complex commercial and civil disputes before the High Court and Court of Appeal.
+                  <div className="bg-background p-6 rounded-lg border border-border hover:border-secondary/50 transition-colors">
+                    <h3 className="font-serif font-bold text-lg text-foreground mb-1">Senior Associate - Dispute Resolution</h3>
+                    <p className="text-secondary font-semibold mb-3">Wahome & Akedi Advocates</p>
+                    <p className="text-muted-foreground">
+                      Successfully represented clients in complex commercial and civil disputes before Kenya's highest courts, including the High Court and Court of Appeal. Handled matters spanning land disputes, commercial transactions, company law, family law, and succession matters. Developed expertise in litigation strategy, evidence presentation, and appellate practice. Built strong track record of favorable settlements and court victories.
                     </p>
                   </div>
 
-                  <div className="bg-background p-6 rounded-lg border border-border">
-                    <h3 className="font-serif font-bold text-lg text-foreground mb-2">Associate - Corporate & Commercial Law</h3>
-                    <p className="text-secondary font-semibold mb-2">IKM Advocates (DLA Piper Africa Kenya)</p>
-                    <p className="text-muted-foreground text-sm">
-                      Provided legal counsel on commercial transactions, corporate governance, and regulatory compliance for multinational and local corporations.
+                  <div className="bg-background p-6 rounded-lg border border-border hover:border-secondary/50 transition-colors">
+                    <h3 className="font-serif font-bold text-lg text-foreground mb-1">Associate - Corporate & Commercial Law</h3>
+                    <p className="text-secondary font-semibold mb-3">IKM Advocates (DLA Piper Africa Kenya)</p>
+                    <p className="text-muted-foreground">
+                      Provided comprehensive legal counsel on diverse commercial transactions for multinational corporations and established local businesses. Specialized in corporate transactions, M&A advisory, contract drafting, corporate governance compliance, and regulatory matters. Gained exposure to international best practices and complex cross-border transaction experience while working with one of Africa's largest law firms.
                     </p>
                   </div>
                 </div>
@@ -170,26 +167,29 @@ export default function PrinceProfile() {
 
               {/* Client Focus */}
               <div className="bg-primary/10 border-2 border-secondary/30 p-8 rounded-lg">
-                <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Client Success Philosophy</h3>
+                <div className="flex items-center gap-3 mb-6">
+                  <Target size={28} className="text-secondary" />
+                  <h3 className="font-serif text-2xl font-bold text-foreground">Client Success Philosophy</h3>
+                </div>
                 <p className="text-muted-foreground mb-4">
                   Prince brings a unique combination of academic rigor, practical courtroom experience, and commercial acumen to every matter. His approach emphasizes:
                 </p>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex gap-2">
-                    <span className="text-secondary font-bold">•</span>
-                    Strategic legal planning aligned with client business objectives
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex gap-3 items-start">
+                    <Star size={20} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span>Strategic legal planning aligned with client business objectives and long-term success</span>
                   </li>
-                  <li className="flex gap-2">
-                    <span className="text-secondary font-bold">•</span>
-                    Speedy resolution without compromising quality
+                  <li className="flex gap-3 items-start">
+                    <Star size={20} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span>Speedy resolution without compromising quality or thoroughness of analysis</span>
                   </li>
-                  <li className="flex gap-2">
-                    <span className="text-secondary font-bold">•</span>
-                    Innovative solutions to complex legal challenges
+                  <li className="flex gap-3 items-start">
+                    <Star size={20} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span>Innovative solutions to complex legal challenges using creative problem-solving</span>
                   </li>
-                  <li className="flex gap-2">
-                    <span className="text-secondary font-bold">•</span>
-                    Practical advice focused on achievable outcomes
+                  <li className="flex gap-3 items-start">
+                    <Star size={20} className="text-secondary flex-shrink-0 mt-0.5" />
+                    <span>Practical advice focused on achievable outcomes and measurable client value</span>
                   </li>
                 </ul>
               </div>

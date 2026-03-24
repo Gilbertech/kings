@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation'
+import HeroSection from '@/components/HeroSection'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -15,14 +16,12 @@ export default function Services() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-serif text-5xl md:text-5xl font-bold mb-4 text-balance">Our Legal Services</h1>
-          <p className="text-xl text-primary-foreground/90 max-w-2xl">
-            Comprehensive and specialized legal solutions tailored to your unique needs
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        title="Our Legal Services"
+        subtitle="Comprehensive and specialized legal solutions tailored to your unique needs"
+        imageSrc="/images/hero-commercial-law.jpg"
+        imageAlt="Legal Services"
+      />
 
       {/* Core Services Overview */}
       <section className="py-20 bg-card">
@@ -60,7 +59,7 @@ export default function Services() {
             </div>
 
             {/* Dispute Resolution */}
-            <div className="bg-background p-8 rounded-lg border-2 border-secondary/30 hover:shadow-lg transition-shadow">
+            <div className="bg-background p-8 rounded-lg border-2 border-primary/30 hover:shadow-lg transition-shadow">
               <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Dispute Resolution</h3>
               <p className="text-muted-foreground mb-6">
                 Expert litigation and dispute resolution strategies with experience up to the highest courts.
@@ -118,7 +117,7 @@ export default function Services() {
             </div>
 
             {/* Real Estate */}
-            <div className="bg-background p-8 rounded-lg border-2 border-secondary/30 hover:shadow-lg transition-shadow">
+            <div className="bg-background p-8 rounded-lg border-2 border-primary/30 hover:shadow-lg transition-shadow">
               <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Real Estate</h3>
               <p className="text-muted-foreground mb-6">
                 Efficient deal execution, thorough due diligence, and speedy conveyancing transactions.

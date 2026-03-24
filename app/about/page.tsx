@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation'
+import HeroSection from '@/components/HeroSection'
 import Footer from '@/components/Footer'
-import { CheckCircle } from 'lucide-react'
+import { CheckCircle, FileText, Briefcase, Rocket } from 'lucide-react'
 import { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -15,17 +16,12 @@ export default function About() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative py-24 md:py-32 bg-gradient-to-r from-primary to-primary/90 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4 text-balance">About Kings Law Advocates</h1>
-          <p className="text-xl text-white/90 max-w-2xl">
-            Established to offer extraordinary legal services to corporate and individual clients with speed, agility, and innovation.
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        title="About Kings Law Advocates"
+        subtitle="Established to offer extraordinary legal services to corporate and individual clients with speed, agility, and innovation."
+        imageSrc="/images/legal-team.jpg"
+        imageAlt="Kings Law Advocates Team"
+      />
 
       {/* Mission Section */}
       <section className="py-20 bg-background">
@@ -77,31 +73,31 @@ export default function About() {
           <h2 className="font-serif text-3xl font-bold text-foreground mb-12 text-center">Diverse Experience, Unified Excellence</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-card p-8 rounded-lg border border-border">
+            <div className="bg-card p-8 rounded-lg border border-border hover:border-secondary/50 transition-colors">
               <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-secondary font-bold text-xl">📋</span>
+                <FileText className="text-secondary" size={24} />
               </div>
               <h3 className="font-serif font-bold text-lg mb-3 text-foreground">Law Firm Background</h3>
               <p className="text-muted-foreground">
-                Our team has worked at leading law firms, gaining experience in complex legal matters and professional practice standards.
+                Our team has worked at leading law firms including DLA Piper Africa Kenya, gaining extensive experience in complex legal matters, high-stakes transactions, and professional practice standards. This foundation ensures we deliver world-class legal services.
               </p>
             </div>
-            <div className="bg-card p-8 rounded-lg border border-border">
-              <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-secondary font-bold text-xl">🏢</span>
+            <div className="bg-card p-8 rounded-lg border border-border hover:border-primary/50 transition-colors">
+              <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                <Briefcase className="text-primary" size={24} />
               </div>
               <h3 className="font-serif font-bold text-lg mb-3 text-foreground">Corporate Experience</h3>
               <p className="text-muted-foreground">
-                We bring corporate sector expertise, including regulatory compliance, finance, and strategic decision-making.
+                We bring deep corporate sector expertise, including regulatory compliance, international finance, strategic decision-making, and institutional governance. Our corporate background ensures pragmatic, business-focused legal solutions.
               </p>
             </div>
-            <div className="bg-card p-8 rounded-lg border border-border">
+            <div className="bg-card p-8 rounded-lg border border-border hover:border-secondary/50 transition-colors">
               <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-secondary font-bold text-xl">🚀</span>
+                <Rocket className="text-secondary" size={24} />
               </div>
               <h3 className="font-serif font-bold text-lg mb-3 text-foreground">Startup Perspective</h3>
               <p className="text-muted-foreground">
-                Startup experience brings agility, innovation, and practical problem-solving to every engagement.
+                Startup experience brings agility, rapid innovation, and practical problem-solving to every engagement. We understand the unique challenges of emerging businesses and can deliver cost-effective, scalable legal solutions.
               </p>
             </div>
           </div>

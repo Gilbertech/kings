@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { ArrowRight, Shield, Zap, Award, Users, Heart, CheckCircle } from 'lucide-react'
+import { ArrowRight, Shield, Zap, Award, Users, Heart, CheckCircle, Briefcase, Scale, Building2, MapPin, TrendingUp, BarChart3, DollarSign } from 'lucide-react'
 
 const AnimatedCounter = ({ end, duration = 2000 }: { end: number; duration?: number }) => {
   const [count, setCount] = useState(0)
@@ -113,24 +113,29 @@ export default function Home() {
 
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { icon: '⚖️', title: 'Commercial Law', desc: 'Corporate transactions and business advisory', color: 'from-blue-500/10' },
-                { icon: '🏛️', title: 'Dispute Resolution', desc: 'Litigation and arbitration services', color: 'from-purple-500/10' },
-                { icon: '🏦', title: 'Banking & Finance', desc: 'Finance law and regulatory compliance', color: 'from-green-500/10' },
-                { icon: '🏠', title: 'Real Estate', desc: 'Property transactions and conveyancing', color: 'from-amber-500/10' },
-                { icon: '📊', title: 'Insolvency Law', desc: 'Corporate restructuring solutions', color: 'from-red-500/10' },
-                { icon: '🌍', title: 'Emerging Practice', desc: 'Trade law and environmental matters', color: 'from-teal-500/10' },
-              ].map((service, i) => (
-                <div
-                  key={i}
-                  className={`group bg-gradient-to-br ${service.color} to-transparent backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover-lift cursor-pointer animate-slide-in-up transition-all hover:border-secondary/50`}
-                  style={{ animationDelay: `${i * 0.1}s` }}
-                >
-                  <div className="text-6xl mb-4 group-hover:scale-125 transition-transform duration-300 inline-block">{service.icon}</div>
-                  <h3 className="text-xl font-serif font-bold text-foreground mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{service.desc}</p>
-                  <div className="mt-4 h-0.5 w-0 group-hover:w-8 bg-secondary transition-all duration-300"></div>
-                </div>
-              ))}
+                { Icon: Briefcase, title: 'Commercial Law', desc: 'Corporate transactions and business advisory', color: 'from-blue-500/10' },
+                { Icon: Scale, title: 'Dispute Resolution', desc: 'Litigation and arbitration services', color: 'from-purple-500/10' },
+                { Icon: Building2, title: 'Banking & Finance', desc: 'Finance law and regulatory compliance', color: 'from-green-500/10' },
+                { Icon: MapPin, title: 'Real Estate', desc: 'Property transactions and conveyancing', color: 'from-amber-500/10' },
+                { Icon: BarChart3, title: 'Insolvency Law', desc: 'Corporate restructuring solutions', color: 'from-red-500/10' },
+                { Icon: TrendingUp, title: 'Emerging Practice', desc: 'Trade law and environmental matters', color: 'from-teal-500/10' },
+              ].map((service, i) => {
+                const Icon = service.Icon
+                return (
+                  <div
+                    key={i}
+                    className={`group bg-gradient-to-br ${service.color} to-transparent backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover-lift cursor-pointer animate-slide-in-up transition-all hover:border-secondary/50`}
+                    style={{ animationDelay: `${i * 0.1}s` }}
+                  >
+                    <div className="w-14 h-14 bg-secondary/20 rounded-lg flex items-center justify-center mb-4 group-hover:scale-125 transition-transform duration-300">
+                      <Icon className="text-secondary" size={28} />
+                    </div>
+                    <h3 className="text-xl font-serif font-bold text-foreground mb-3">{service.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{service.desc}</p>
+                    <div className="mt-4 h-0.5 w-0 group-hover:w-8 bg-secondary transition-all duration-300"></div>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </section>
