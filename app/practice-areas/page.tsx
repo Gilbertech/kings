@@ -1,8 +1,9 @@
 import Navigation from '@/components/Navigation'
+import HeroSection from '@/components/HeroSection'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { Metadata } from 'next'
-import { CheckCircle, ArrowRight } from 'lucide-react'
+import { CheckCircle, ArrowRight, Briefcase, Scale, Building2, Home, BarChart3, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Practice Areas | Kings Law Advocates LLP',
@@ -16,14 +17,12 @@ export default function PracticeAreas() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-serif text-5xl md:text-5xl font-bold mb-4 text-balance">Practice Areas</h1>
-          <p className="text-xl text-primary-foreground/90 max-w-2xl">
-            Specialized expertise across multiple legal disciplines
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        title="Practice Areas"
+        subtitle="Specialized expertise across multiple legal disciplines"
+        imageSrc="/images/hero-commercial-law.jpg"
+        imageAlt="Practice Areas"
+      />
 
       {/* Core Practice Areas */}
       <section className="py-20 bg-card">
@@ -33,7 +32,7 @@ export default function PracticeAreas() {
             <div id="commercial-law" className="grid md:grid-cols-2 gap-12 items-start">
               <div>
                 <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">📊</span>
+                  <Briefcase className="text-secondary" size={24} />
                 </div>
                 <h2 className="font-serif text-3xl font-bold text-foreground mb-4">Commercial Law</h2>
                 <p className="text-muted-foreground mb-6">
@@ -64,7 +63,7 @@ export default function PracticeAreas() {
             <div id="dispute-resolution" className="grid md:grid-cols-2 gap-12 items-start">
               <div className="order-2">
                 <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">⚖️</span>
+                  <Scale className="text-secondary" size={24} />
                 </div>
                 <h2 className="font-serif text-3xl font-bold text-foreground mb-4">Dispute Resolution</h2>
                 <p className="text-muted-foreground mb-6">
@@ -95,7 +94,7 @@ export default function PracticeAreas() {
             <div id="banking-finance" className="grid md:grid-cols-2 gap-12 items-start">
               <div>
                 <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">🏦</span>
+                  <Building2 className="text-secondary" size={24} />
                 </div>
                 <h2 className="font-serif text-3xl font-bold text-foreground mb-4">Banking & Finance</h2>
                 <p className="text-muted-foreground mb-6">
@@ -126,7 +125,7 @@ export default function PracticeAreas() {
             <div id="real-estate" className="grid md:grid-cols-2 gap-12 items-start">
               <div className="order-2">
                 <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">🏠</span>
+                  <Home className="text-secondary" size={24} />
                 </div>
                 <h2 className="font-serif text-3xl font-bold text-foreground mb-4">Real Estate</h2>
                 <p className="text-muted-foreground mb-6">
@@ -157,7 +156,7 @@ export default function PracticeAreas() {
             <div id="insolvency-law" className="grid md:grid-cols-2 gap-12 items-start">
               <div>
                 <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-2xl">📈</span>
+                  <BarChart3 className="text-secondary" size={24} />
                 </div>
                 <h2 className="font-serif text-3xl font-bold text-foreground mb-4">Insolvency Law</h2>
                 <p className="text-muted-foreground mb-6">

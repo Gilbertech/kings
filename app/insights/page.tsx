@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation'
+import HeroSection from '@/components/HeroSection'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -17,7 +18,7 @@ export default function Insights() {
       title: "Understanding Kenya's New Corporate Governance Framework",
       date: 'March 2024',
       category: 'Corporate Law',
-      excerpt: 'A comprehensive guide to the latest corporate governance requirements and how they impact your business operations.',
+      excerpt: 'A comprehensive guide to the latest corporate governance requirements and how they impact your business operations. Learn about board responsibilities, shareholder rights, and compliance obligations.',
       readTime: '5 min read',
       featured: true,
     },
@@ -26,7 +27,7 @@ export default function Insights() {
       title: 'Real Estate Transactions: Common Pitfalls to Avoid',
       date: 'February 2024',
       category: 'Real Estate',
-      excerpt: 'Discover the most common mistakes in property transactions and how to protect yourself from costly legal issues.',
+      excerpt: 'Discover the most common mistakes in property transactions and how to protect yourself from costly legal issues. Includes detailed guidance on due diligence, title verification, and escrow management.',
       readTime: '7 min read',
       featured: true,
     },
@@ -35,7 +36,7 @@ export default function Insights() {
       title: 'Dispute Resolution: When to Litigate vs. Arbitrate',
       date: 'January 2024',
       category: 'Dispute Resolution',
-      excerpt: 'Learn the differences between litigation and arbitration, and which approach is best for your specific situation.',
+      excerpt: 'Learn the differences between litigation and arbitration, and which approach is best for your specific situation. Compare costs, timelines, confidentiality, and enforceability.',
       readTime: '6 min read',
       featured: true,
     },
@@ -44,7 +45,7 @@ export default function Insights() {
       title: 'Banking Law Updates: Navigating Regulatory Changes',
       date: 'December 2023',
       category: 'Banking & Finance',
-      excerpt: 'Stay informed about recent banking regulations and their implications for financial institutions and clients.',
+      excerpt: 'Stay informed about recent banking regulations and their implications for financial institutions and clients. Covers Basel III compliance, anti-money laundering requirements, and digital banking.',
       readTime: '8 min read',
     },
     {
@@ -52,7 +53,7 @@ export default function Insights() {
       title: 'Employment Law: Protecting Your Rights as an Employer',
       date: 'November 2023',
       category: 'Employment Law',
-      excerpt: 'Essential guide to employment law compliance and managing workplace issues effectively.',
+      excerpt: 'Essential guide to employment law compliance and managing workplace issues effectively. Covers contracts, termination procedures, discrimination prevention, and statutory obligations.',
       readTime: '7 min read',
     },
     {
@@ -60,7 +61,7 @@ export default function Insights() {
       title: 'Intellectual Property Rights in the Digital Age',
       date: 'October 2023',
       category: 'IP Law',
-      excerpt: 'Understanding copyright, trademarks, and patents in today\'s digital landscape.',
+      excerpt: 'Understanding copyright, trademarks, and patents in today\'s digital landscape. Learn how to protect your innovations, enforce IP rights, and navigate licensing agreements.',
       readTime: '9 min read',
     },
   ]
@@ -72,14 +73,12 @@ export default function Insights() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-serif text-5xl md:text-5xl font-bold mb-4 text-balance">Legal Insights & Updates</h1>
-          <p className="text-xl text-primary-foreground/90 max-w-2xl">
-            Expert articles and resources to keep you informed about legal trends and regulatory updates
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        title="Legal Insights & Updates"
+        subtitle="Expert articles and resources to keep you informed about legal trends and regulatory updates"
+        imageSrc="/images/hero-insights.jpg"
+        imageAlt="Legal Insights"
+      />
 
       {/* Category Filter */}
       <section className="py-8 bg-card border-b border-border">

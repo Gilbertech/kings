@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation'
+import HeroSection from '@/components/HeroSection'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -15,14 +16,12 @@ export default function Contact() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-serif text-5xl md:text-5xl font-bold mb-4 text-balance">Contact Us</h1>
-          <p className="text-xl text-primary-foreground/90 max-w-2xl">
-            Reach out to Kings Law Advocates for legal assistance
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        title="Contact Us"
+        subtitle="Reach out to Kings Law Advocates for legal assistance and expert consultation"
+        imageSrc="/images/hero-commercial-law.jpg"
+        imageAlt="Contact Us"
+      />
 
       {/* Contact Information */}
       <section className="py-20 bg-card">

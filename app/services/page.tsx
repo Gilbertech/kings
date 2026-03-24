@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation'
+import HeroSection from '@/components/HeroSection'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -15,14 +16,12 @@ export default function Services() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-serif text-5xl md:text-5xl font-bold mb-4 text-balance">Our Legal Services</h1>
-          <p className="text-xl text-primary-foreground/90 max-w-2xl">
-            Comprehensive and specialized legal solutions tailored to your unique needs
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        title="Our Legal Services"
+        subtitle="Comprehensive and specialized legal solutions tailored to your unique needs"
+        imageSrc="/images/hero-commercial-law.jpg"
+        imageAlt="Legal Services"
+      />
 
       {/* Core Services Overview */}
       <section className="py-20 bg-card">
