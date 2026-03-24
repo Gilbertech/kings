@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { ArrowRight, Shield, Zap, Award, Users, Heart, CheckCircle, Briefcase, Scale, Building2, Home, TrendingUp, BarChart3, DollarSign } from 'lucide-react'
+import { ArrowRight, Shield, Zap, Award, Users, Heart, CheckCircle, Briefcase, Scale, Building2, Home as HomeIcon, TrendingUp, BarChart3, DollarSign } from 'lucide-react'
 
 const AnimatedCounter = ({ end, duration = 2000 }: { end: number; duration?: number }) => {
   const [count, setCount] = useState(0)
@@ -116,7 +116,7 @@ export default function Home() {
                 { Icon: Briefcase, title: 'Commercial Law', desc: 'Corporate transactions and business advisory', color: 'from-blue-500/10' },
                 { Icon: Scale, title: 'Dispute Resolution', desc: 'Litigation and arbitration services', color: 'from-purple-500/10' },
                 { Icon: Building2, title: 'Banking & Finance', desc: 'Finance law and regulatory compliance', color: 'from-green-500/10' },
-                { Icon: Home, title: 'Real Estate', desc: 'Property transactions and conveyancing', color: 'from-amber-500/10' },
+                { Icon: HomeIcon, title: 'Real Estate', desc: 'Property transactions and conveyancing', color: 'from-amber-500/10' },
                 { Icon: BarChart3, title: 'Insolvency Law', desc: 'Corporate restructuring solutions', color: 'from-red-500/10' },
                 { Icon: TrendingUp, title: 'Emerging Practice', desc: 'Trade law and environmental matters', color: 'from-teal-500/10' },
               ].map((service, i) => {
